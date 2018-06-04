@@ -1,6 +1,59 @@
 @import 'setup';
+@import 'utils';
+@import 'typography';
+@import 'header';
+@import 'about';
+@import 'contact';
+@import 'skills';
 
-.container {
+
+/*================================
+GLOBAL STYLES
+================================*/
+.contentWrapper{
 	max-width: 900px;
-	margin: 0 auto;
+	margin: 0 10%;
+} 
+.flex-container{
+	display: flex;
 }
+.row{
+	flex-flow: row wrap;
+}
+.column{
+	flex-flow: column wrap;
+}
+.primary-bkg{
+	background: $primary-bkg;
+}
+.secondary-bkg{
+	background: $secondary-bkg;
+}
+button:hover,
+button:active{
+	transform: scale(1.2)
+}
+footer {
+	color: white;
+	background: black;
+}
+
+.portfolio{
+	article{
+		margin-bottom: 2%;
+		img, .projectText{
+			width: 48%;
+		}
+		.projectText.left{
+			margin-left: 2%;
+		}
+		.projectText.right{
+			margin-right: 2%;
+		}
+	}
+}
+
+/*================================
+MEDIA QUERIES
+================================*/
+

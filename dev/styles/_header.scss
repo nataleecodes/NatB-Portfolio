@@ -1,0 +1,17 @@
+header{
+    padding-top: 10%;
+    background-image: url("/Assets/yu-kato-611880-unsplash.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+.heroContent{
+    &__portFolioBtn{
+        background: $primary-bkg;
+        border: none;
+        padding: 2% 4%;
+    }  
+    &__mainNav{
+        width: 100%;
+    }
+}
