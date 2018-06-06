@@ -1,17 +1,78 @@
 header{
-    padding-top: 10%;
-    background-image: url("/Assets/yu-kato-611880-unsplash.jpg");
-	background-repeat: no-repeat;
+    background: 
+    linear-gradient(
+      rgba(255, 255, 255, 0.15), 
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("/Assets/yu-kato-min.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
 .heroContent{
-    &__portFolioBtn{
+    justify-content: space-between;
+    height: 100vh;
+    &__headerText__title{
+    color:$black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    }
+    &__headerText__portfolioBtn{
         background: $primary-bkg;
-        border: none;
         padding: 2% 4%;
-    }  
-    &__mainNav{
-        width: 100%;
+        display: block;
+        width: 40%;
+        margin: 0 auto 44% auto;
+        text-align: center;
     }
 }
+.heroNavBar{
+    width: 100%;
+    justify-content: space-between;
+    &__mainNav{
+        li{
+            padding: 2%;
+            border-radius: 5%;
+            background: #363939;
+            a{
+                color: #cddbe9;
+            }
+        }
+    }
+    
+    &__mainNav,
+    #socialBtns{
+        padding-left: 0;
+        margin-top: 5%;
+        li{
+            list-style: none;
+            display: inline-block;
+            color:  #363939;;
+            // padding-left: 0;
+        }
+    }
+    .heroNavBar__socialList{
+        li{
+            a{
+                color:  #363939;
+            }
+        }
+    }
+}
+ 
+// #buttonFix{
+
+// }
+// .heroContent__mainNav__List{
+//     padding: 0;
+//     text-align: center;
+//     li{
+//         list-style: none;
+//         display: inline-block;
+//         padding: 2%;
+//         // width: 25%;
+//         a{
+//             color: $black;
+//             font-size: 2rem;
+//         }
+//     }
+// }

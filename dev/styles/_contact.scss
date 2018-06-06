@@ -1,7 +1,29 @@
-contact{
-    label,
+// contact{
+//     label,
+//     input[type="text"],
+//     input[type="textarea"]{
+//         width: 100%;
+//     }
+//     input[type="submit"]{
+//         width: 30%;
+//         margin-top: 5%;
+//         color: red;
+//     }
+// }
+
+form{
+    label{
+        margin-top: 2%;
+    }
     input[type="text"],
-    input[type="textarea"]{
-        width: 100%;
+    textarea{
+        border: 0.5px solid silver;
+        line-height: 5rem;
+    }
+    input[type="submit"]{
+        margin-top: 5%;
+    }
+    label{
+        font-size: 2rem;
     }
 }

@@ -5,17 +5,40 @@
 @import 'about';
 @import 'contact';
 @import 'skills';
+@import 'portfolio';
 
 
 /*================================
 GLOBAL STYLES
 ================================*/
+
 .contentWrapper{
 	max-width: 900px;
-	margin: 0 10%;
+	margin: 0 auto;
 } 
 .flex-container{
 	display: flex;
+}
+.heroContent{
+	display: flex;
+	flex-flow: column;
+	flex-wrap: no-wrap;
+}
+// .heroNavBar{
+// 	display: flex;
+// 	flex-flow: row;
+// 	flex-wrap: wrap;
+// }
+.heroNavBar__mainNav,
+.heroNavBar__socialList{
+	width: 50%;
+}
+.heroNavBar__mainNav{
+	float: left;
+}
+.heroNavBar__socialList{
+	float: right;
+	text-align: end;
 }
 .row{
 	flex-flow: row wrap;
@@ -29,31 +52,165 @@ GLOBAL STYLES
 .secondary-bkg{
 	background: $secondary-bkg;
 }
+.about, 
+.skills,
+.portfolio,
+.contact{
+	padding: 5% 0 8% 0;
+}
+button,
+input[type="submit"]{
+	font-family: "Raleway";
+	background: silver;
+    border: 0;
+	padding: 2% 4%;
+	margin: 0 auto;
+	border: 1px solid transparent;
+	margin-bottom: 5%;
+}
+button,
+input[type="submit"]{
+	width: 30%;
+}
+a:hover, 
+a:active,
 button:hover,
-button:active{
-	transform: scale(1.2)
+button:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+   background: $yellow;
 }
-footer {
-	color: white;
-	background: black;
-}
-
-.portfolio{
-	article{
-		margin-bottom: 2%;
-		img, .projectText{
-			width: 48%;
-		}
-		.projectText.left{
-			margin-left: 2%;
-		}
-		.projectText.right{
-			margin-right: 2%;
-		}
+footer{
+	background: $black;
+	p {
+		text-align: center;
+		color:#fefefe;
+		margin: 0;
+		padding: 10px 0 30px;
 	}
 }
 
+.contact__blurb{
+	margin: 10px 0;
+}
+
+.email-me, label{
+	a{
+	font-size: 2rem;
+	line-height: 2.2rem;
+	text-transform: none;
+	}
+}
+
+.input[type="text"]{
+	line-height: 2.5rem;
+}
+
+#socialBtns{
+	li{
+		a:hover{
+			background: none;
+			color: $dark-grey;
+		}
+	}
+}
+.heroNavBar__mainNav{
+	li:hover{
+		background: $dark-grey;
+		a:hover{
+			background: $dark-grey;
+		}
+	}
+}
+// .footerNav__footerItem{
+// 	width: 15%;
+// 	text-align: center;
+// 	list-style: none;
+// 	display: inline-block;
+// 	background: red;
+// 	a{
+// 		color: white;
+// 	}
+// }
 /*================================
-MEDIA QUERIES
+MEDIA QUERIES 
 ================================*/
 
+/*Tablet view*/
+@media (min-width: 750px){
+	.portfolio{
+		article{
+			margin: 6% 0 8% 0;
+			img, .projectText{
+				width: 48%;
+			}
+			.projectText.left{
+				margin-left: 2%;
+			}
+			.projectText.right{
+				margin-right: 2%;
+				flex-direction: row-reverse;
+			}
+		}
+	}	
+}
+
+
+/*Desktop view*/
+@media (min-width: 900px) {
+	a{
+		font-size: 2rem;
+	}
+	button{
+		margin-top: 2%;
+	}
+	.heroContent__portFolioBtn{
+		margin-bottom: 0;
+	}
+	h1{
+		font-size: 10rem;
+		line-height: 11rem;
+		margin-top: 70px;
+		// text-align: left;
+	}
+	h2{
+		padding: 6% 0;
+	}
+	.heroContent__headerText__title{
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+	}
+	.about{
+		max-height: 600px;
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+	p {
+		font-size: 2.7rem;
+		line-height: 3.5rem;
+		margin-top: 0%;
+	}
+	.contentWrapper{
+	max-width: 1000px;
+	} 
+	.contact{
+		a {
+			font-size: 2rem;
+		}
+	}
+	.skills__icons{
+		figcaption{
+			font-size: 2rem;
+		}
+		i{
+			font-size: 8rem;
+		}
+		
+	}
+	#email-font{
+		font-size: 2.7rem;
+	}
+	article{
+		margin-bottom: 90px;
+	}
+}

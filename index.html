@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Project</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Natalee Blagden | Web Developer</title>
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600|Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
@@ -16,17 +18,37 @@
 <body>
     <!--HEADER STARTS-->
     <header>
-        <div class="heroContent contentWrapper flex-container row">
-            <h1 class="heroContent__name">Natalee Elizabeth Blagden</h1>
-            <h2 class="heroContent__title uppercase">Front-End Developer</h2>
-            <a class="heroContent__portFolioBtn">Check out My Portfolio</a>
-            <nav class="heroContent__mainNav">
-                <ul class="heroContent__mainNav__List">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <!-- <img class="headshot" src="/Assets/nat-profile-optimized.jpg"> -->
+        <div class="heroContent contentWrapper">
+            <nav class="heroNavBar">
+                <ul class="heroNavBar__mainNav">
+                    <li>
+                        <a href="#about" class="smoothScroll">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="smoothScroll">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="smoothScroll">Contact</a>
+                    </li>
+                </ul>
+                <ul id="socialBtns" class="heroNavBar__socialList">
+                    <li>
+                        <a href="https://twitter.com/HeyNatalee"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/nataleeblagden/"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nataleecodes"><i class="fab fa-github-square"></i></a>
+                    </li>
                 </ul>
             </nav>
+            <div class="headerText">
+                <h1 class="heroContent__headerText__name">Natalee Elizabeth Blagden</h1>
+                <h2 class="heroContent__headerText__title uppercase">Front-End Developer</h2>
+                <a href="#portfolio" id="buttonFix" class="heroContent__headerText__portfolioBtn smoothScroll">Check out My Portfolio</a>
+            </div>
         </div><!--HEROCONTENT WRAPPER ENDS-->
     </header><!--HEADER SECTION ENDS-->
 
@@ -34,16 +56,14 @@
             <!--ABOUT SECTION STARTS-->
             <section class="secondary-bkg">
                 <div id="about" class="about contentWrapper flex-container row">
-                    <h2 class="about__title">About Me</h2>
+                    <h2 id="about__title">About Me</h2>
                     <img class="about__headshot" src="/Assets/nat-profile-optimized.jpg" alt="Natalee in a chair at HackerYou">
                     <div class="about__bio">
-                        <p>I fell in love with coding at an introductory JavaScript workshop in Santa
-                        Monica. The instructor was Esther Lee, Senior Software Development Lead at Hulu. It was a hot day and most people would have preferred to be on the beach, but Esther? She’s practically effervescent when she’s explaining
-                        how computers process algorithms. I was hooked. Instantly. I've never been more satisfied with my career and I owe it to her.</p> 
-                        <p>I aspire to carry her verve into every workplace. I'm eager to pursue new skills and master emerging technologies.</p>
-                        <p>My background in technical writing helps me approach software development projects with a well-rounded perspective. In previous workplaces, I’ve had the pleasure of connecting with engineers, designers, project managers, marketing
-                        pros and CTOs. In every role I held as a communications professional, I was always the first to raise my hand to troubleshoot website issues. Now I am thrilled to be focusing on code full-time.</p>
-                        <p>I’ve always liked helping people. As a web developer, I’m excited to help people share great ideas and new services that have the power to transform the way we live.</p>
+                        <p>I first fell in love with coding in Santa Monica during an introductory JavaScript workshop taught by Esther Lee, Senior
+                        Software Development Lead at Hulu. Inspired by her effervescence, I aspire to bring enthusiasm, humility, and curiosity to
+                        every project I approach. A former technical writer, I'm passionate about emerging technologies and collaborating with all
+                        members of our community. I'm driven to help others, to learn new skills, and to engage with great ideas that have the power
+                        to transform the way we live.</p>
                     </div><!--BIO BOX ENDS-->
                 </div><!--CONTENT WRAPPER ENDS-->
             </section><!--ABOUT SECTION ENDS-->
@@ -101,53 +121,70 @@
                             <i class="devicon-photoshop-plain"></i>
                             <figcaption>PhotoShop</figcaption>
                         </figure>
-                        <figure>
+                        <!-- <figure>
                             <i class="devicon-wordpress-plain"></i>
                             <figcaption>WordPress</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="nounIcon" src="Assets/noun_71563_cc.svg" alt="icon of a laptop and a mobile phone">
+                        </figure> -->
+                        <!-- <figure>
+                            <img class="nounIcon" id="responsiveIcon" src="Assets/noun_71563_cc.svg" alt="icon of a laptop and a mobile phone">
                             <figcaption>Mobile-first</figcaption>
                         </figure>
                         <figure>
                             <img src="Assets/noun_333378_glasses.svg" alt="">
                             <figcaption>Accessiblity</figcaption>
-                        </figure>
+                        </figure> -->
                     </div>
                 </div>
             </section><!--SKILLS SECTION ENDS-->
 
             <!--PORTFOLIO SECTION STARTS-->
-            <section class="secondary-bkg">
+            <section id="portfolio" class="secondary-bkg smoothscroll">
                 <div class="portfolio contentWrapper">
                     <h2 id="portfolio__title">Portfolio</h2>
                     <article class="portfolio__portfolioItem flex-container row">
-                        <img src="http://www.fillmurray.com/200/200" alt="">
-                        <div class="projectText left">
-                            <h3>React App - I Heart Concerts</h3>
-                            <p>An app that uses the BandsInTown API and Firebase to allow users to create a journal of their favourite bands and find tickets to upcoming shows. User's info is saved to their private file using Google Auth and Firebase rules.</p>
-                        </div>
-                    </article>
-                    <article class="portfolio__portfolioItem flex-container row">
+                        <img src="Assets/emily-g-mockup.jpeg" alt="Wine finder app previewed on a laptop and a smartphone">
                         <div class="projectText right">
-                            <h3>React App - Emily Gilmore Recommends Wine</h3>
+                            <h3>React App with Firebase</h3> 
+                            <h4 class="subtitle">- Emily Gilmore Recommends Wine -</h4>
                             <p>Not sure what to bring to a special event? This app uses React Router and Firebase to provide suggestions in a clean format with entertaining text and smooth transitions.</p>
                         </div>
-                        <img src="Assets/emily-g-mockup.jpeg" alt="Wine finder app previewed on a laptop and a smartphone">
+                            <button>
+                                <a target="_blank" href="https://egreccoswine.firebaseapp.com/">Try it!</a>
+                            </button>
+                    </article>
+                    <article class="portfolio__portfolioItem flex-container row">
+                        <img src="Assets/lets-cook.jpeg" alt="A recipe picker quiz previewed on a laptop and a smartphone">
+                        <div class="projectText left">
+                            <h3>jQuery App with Firebase</h3>
+                            <h4 class="subtitle">- Let's Get Cooking Quiz -</h4>
+                            <p>Find meal prep recipes faster with this cheerful little quiz. I built this using object-oriented JavaScript (organized
+                                in its own namespace). Data is brought in from a custom JSON database in Firebase, and CSS transitions add polish.</p>
+                        </div>
+                        <button>
+                            <a target="_blank" href="http://nataleecodes.com/project3/">Try it!</a>
+                        </button>
+                    </article>
+                    <article class="portfolio__portfolioItem flex-container row">
+                        <img src="/Assets/mockup-concerts.jpeg" alt="Preview of a concert finder app on a laptop and a smartphone">
+                        <div class="projectText left">
+                            <h3>React App with Firebase & an API</h3>
+                            <h4 class="subtitle">- I Heart Concerts" Event Finder -</h3>
+                            <p>An app that uses the BandsInTown API and Firebase to allow users to create a journal of their favourite bands and find tickets to upcoming shows. User's info is saved to their private file using Google Auth and Firebase rules.</p>
+                        </div>
+                        <button>
+                            <a target="_blank" href="https://iheartconcerts-80ab6.firebaseapp.com/">Try it!</a>
+                        </button>
                     </article>
                     <article class="portfolio__portfolioItem flex-container row">
                         <img src="Assets/takeoff-small.jpeg" alt="Take Off road trip planning app previewed on a laptop and a smartphone">
                         <div class="projectText left">
-                            <h3>jQuery App Using Google APIs</h3>
+                            <h3>jQuery App Using an API</h3> 
+                            <h4 class="subtitle">- Take Off Road Trip Planner -</h4>
                             <p>This project utilizes two Google APIs and modular programming practices. The goal: help people plan road trips to summer hot spots around Ontario.</p>
                         </div>
-                    </article>
-                    <article class="portfolio__portfolioItem flex-container row">
-                        <div class="projectText right">
-                            <h3>jQuery App - Let's Get Cooking</h3>
-                            <p>Find meal prep recipes faster with this cheerful little quiz.</p>
-                        </div>
-                        <img src="Assets/lets-cook.jpeg" alt="A recipe picker quiz previewed on a laptop and a smartphone">
+                        <button>
+                            <a target="_blank" href="https://nataleecodes.com/takeoff2/">Try it!</a>
+                        </button>
                     </article>
                 </div>
             </section><!--PORTFOLIO SECTION ENDS-->
@@ -155,8 +192,9 @@
             <!--CONTACT SECTION STARTS-->
             <section class="primary-bkg" id="contact">  
                 <form action="http://www.focuspocus.io/magic/natalee@nataleecodes.com" method="POST" class="contact flex-container column contentWrapper">
-                <h2 class="contact__title">Contact</h2>
-                <p class="contact__subtitle">Contact me to set up a call.</p>
+                    <h2 class="contact__title">Contact</h2>
+                    <p class="contact__blurb">Drop me a line!</p> 
+                    <p class="contact__blurb email-me">Email <a id="email-font" class="email-me" href="mailto:natalee.blagden@gmail.com">Natalee.blagden(at)gmail.com</a> or fill out the form below.</p>
                     <label for="name">Name</label>
                     <input type="text" name="name"></input>
                     <label for="email">Email</label>
@@ -164,7 +202,7 @@
                     <label for="subject">Subject</label>
                     <input type="text" name="subject"></input>
                     <label for="message">Message</label>
-                    <input type="textarea" name="message"></input>
+                    <textarea name="comment" form="usrform"  rows="4" cols="50"></textarea>
                     <input type="submit" value="Send"></input>
                 </form>
             </section><!--CONTACT SECTION ENDS-->
@@ -173,25 +211,11 @@
 
     <footer>
         <p class="copyright">&copy;2018 Natalee Blagden</p>
-        <ul class="footerNav">
-            <li class="footerNav__footerItem">
-                <a href="https://github.com/">GitHub</a>
-            </li>
-            <li class="footerNav__footerItem">
-                <a href="https://www.linkedin.com/in/nataleeblagden/">LinkedIn</a>
-            </li>
-            <li class="footerNav__footerItem">
-                <a href="https://twitter.com/HeyNatalee">Twitter</a>
-            </li>
-            <li class="footerNav__footerItem">
-                <a href="#header">Top</a>
-            </li>
-        </ul>
     </footer>
 
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="jquery.smoothscroll.js"></script>
+    <script type="text/javascript" src="public/scripts/smoothscroll.js"></script>
     <script src="public/scripts/main.js"></script>
 </body>
 
