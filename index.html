@@ -142,49 +142,61 @@
                 <div class="portfolio contentWrapper">
                     <h2 id="portfolio__title">Portfolio</h2>
                     <article class="portfolio__portfolioItem flex-container row">
-                        <img src="Assets/emily-g-mockup.jpeg" alt="Wine finder app previewed on a laptop and a smartphone">
+                        <img src="Assets/mockup-emily.png" alt="Wine finder app previewed on a laptop and a smartphone">
                         <div class="projectText right">
                             <h3>React App with Firebase</h3> 
                             <h4 class="subtitle">- Emily Gilmore Recommends Wine -</h4>
                             <p>Not sure what to bring to a special event? This app uses React Router and Firebase to provide suggestions in a clean format with entertaining text and smooth transitions.</p>
-                        </div>
                             <button>
-                                <a target="_blank" href="https://egreccoswine.firebaseapp.com/">Try it!</a>
+                                <a target="_blank" href="https://egreccoswine.firebaseapp.com/">Try it live</a>
                             </button>
+                            <button>
+                                <a target="_blank" href="https://github.com/nataleecodes/Solo-React-Project">Github</a>
+                            </button>
+                        </div>
                     </article>
                     <article class="portfolio__portfolioItem flex-container row">
-                        <img src="Assets/lets-cook.jpeg" alt="A recipe picker quiz previewed on a laptop and a smartphone">
+                        <img src="Assets/mockup-letscook.png" alt="A recipe picker quiz previewed on a laptop and a smartphone">
                         <div class="projectText left">
                             <h3>jQuery App with Firebase</h3>
                             <h4 class="subtitle">- Let's Get Cooking Quiz -</h4>
                             <p>Find meal prep recipes faster with this cheerful little quiz. I built this using object-oriented JavaScript (organized
                                 in its own namespace). Data is brought in from a custom JSON database in Firebase, and CSS transitions add polish.</p>
+                            <button>
+                                <a target="_blank" href="http://nataleecodes.com/project3/">Try it live</a>
+                            </button>
+                            <button>
+                                <a target="_blank" href="https://github.com/nataleecodes/letsgetcooking">Github</a>
+                            </button>
                         </div>
-                        <button>
-                            <a target="_blank" href="http://nataleecodes.com/project3/">Try it!</a>
-                        </button>
                     </article>
                     <article class="portfolio__portfolioItem flex-container row">
-                        <img src="/Assets/mockup-concerts.jpeg" alt="Preview of a concert finder app on a laptop and a smartphone">
+                        <img src="/Assets/mockup-concerts.png" alt="Preview of a concert finder app on a laptop and a smartphone">
                         <div class="projectText left">
                             <h3>React App with Firebase & an API</h3>
                             <h4 class="subtitle">- I Heart Concerts" Event Finder -</h3>
                             <p>An app that uses the BandsInTown API and Firebase to allow users to create a journal of their favourite bands and find tickets to upcoming shows. User's info is saved to their private file using Google Auth and Firebase rules.</p>
+                            <button>
+                                <a target="_blank" href="https://iheartconcerts-80ab6.firebaseapp.com/">Try it live</a>
+                            </button>
+                            <button>
+                                <a target="_blank" href="https://github.com/nataleecodes/I-Heart-Concerts-React-Project">Github</a>
+                            </button>
                         </div>
-                        <button>
-                            <a target="_blank" href="https://iheartconcerts-80ab6.firebaseapp.com/">Try it!</a>
-                        </button>
                     </article>
                     <article class="portfolio__portfolioItem flex-container row">
-                        <img src="Assets/takeoff-small.jpeg" alt="Take Off road trip planning app previewed on a laptop and a smartphone">
+                        <img src="Assets/mockup-takeoff.png" alt="Take Off road trip planning app previewed on a laptop and a smartphone">
                         <div class="projectText left">
                             <h3>jQuery App Using an API</h3> 
                             <h4 class="subtitle">- Take Off Road Trip Planner -</h4>
                             <p>This project utilizes two Google APIs and modular programming practices. The goal: help people plan road trips to summer hot spots around Ontario.</p>
+                            <button>
+                                <a target="_blank" href="http://nataleecodes.com/takeoff2/">Try it live</a>
+                            </button>
+                            <button>
+                                <a target="_blank" href="https://github.com/nataleecodes/TakeOff-JQuery-Project">Github</a>
+                            </button>
                         </div>
-                        <button>
-                            <a target="_blank" href="https://nataleecodes.com/takeoff2/">Try it!</a>
-                        </button>
                     </article>
                 </div>
             </section><!--PORTFOLIO SECTION ENDS-->
@@ -195,14 +207,19 @@
                     <h2 class="contact__title">Contact</h2>
                     <p class="contact__blurb">Drop me a line!</p> 
                     <p class="contact__blurb email-me">Email <a id="email-font" class="email-me" href="mailto:natalee.blagden@gmail.com">Natalee.blagden(at)gmail.com</a> or fill out the form below.</p>
-                    <label for="name">Name</label>
-                    <input type="text" name="name"></input>
-                    <label for="email">Email</label>
-                    <input type="text" name="email"></input>
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject"></input>
-                    <label for="message">Message</label>
-                    <textarea name="comment" form="usrform"  rows="4" cols="50"></textarea>
+                    
+                    <label class="visually-hidden"for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name"></input>
+
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="text" name="email" id="subject" placeholder="email@coolcompany.com"></input>
+                    
+                    <label for="subject" class="visually-hidden">Subject</label>
+                    <input type="text" name="subject" id="message" placeholder="Subject"></input>
+                    
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea name="comment" form="usrform"  rows="4" cols="50" id="message" placeholder="Your brilliant ideas go here."></textarea>
+                    
                     <input type="submit" value="Send"></input>
                 </form>
             </section><!--CONTACT SECTION ENDS-->

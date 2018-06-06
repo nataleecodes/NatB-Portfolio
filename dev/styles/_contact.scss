@@ -26,4 +26,19 @@ form{
     label{
         font-size: 2rem;
     }
+    input::placeholder,
+    textarea::placeholder{
+        padding-left: 1.5%;
+    }
+    :placeholder-shown{
+        padding-left: 1.5%;
+    }
+    input[type="text"],
+    textarea{
+        width: 100%;
+        margin-top: 10px;
+        &:hover{
+            background: $yellow;
+        }
+    }
 }

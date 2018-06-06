@@ -210,10 +210,11 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .heroNavBar__mainNav li {
-    padding: 2%;
     border-radius: 5%;
     background: #363939; }
     .heroNavBar__mainNav li a {
+      display: inline-block;
+      padding: 17px;
       color: #cddbe9; }
   .heroNavBar__mainNav,
   .heroNavBar #socialBtns {
@@ -255,6 +256,33 @@ form input[type="submit"] {
 form label {
   font-size: 2rem; }
 
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  padding-left: 1.5%; }
+
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  padding-left: 1.5%; }
+
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+  padding-left: 1.5%; }
+
+form input::placeholder,
+form textarea::placeholder {
+  padding-left: 1.5%; }
+
+form :placeholder-shown {
+  padding-left: 1.5%; }
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  margin-top: 10px; }
+  form input[type="text"]:hover,
+  form textarea:hover {
+    background: #FDE74C; }
+
 figure {
   -ms-flex-preferred-size: 60px;
       flex-basis: 60px;
@@ -280,9 +308,23 @@ figure, figcaption {
 #responsiveIcon {
   padding-top: 2%; }
 
+article img {
+  -o-object-fit: contain;
+     object-fit: contain; }
+
 /*================================
 GLOBAL STYLES
 ================================*/
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
 .contentWrapper {
   max-width: 900px;
   margin: 0 auto; }
@@ -350,7 +392,8 @@ input[type="submit"] {
 
 button,
 input[type="submit"] {
-  width: 30%; }
+  width: 40%;
+  font-size: 2rem; }
 
 a:hover,
 a:active,
@@ -386,7 +429,8 @@ footer {
 .heroNavBar__mainNav li:hover {
   background: #575c5d; }
   .heroNavBar__mainNav li:hover a:hover {
-    background: #575c5d; }
+    background: #575c5d;
+    border-radius: 5px; }
 
 /*================================
 MEDIA QUERIES 
@@ -442,4 +486,8 @@ MEDIA QUERIES
   #email-font {
     font-size: 2.7rem; }
   article {
-    margin-bottom: 90px; } }
+    margin-bottom: 90px; }
+  .projectText h3 {
+    text-align: left; }
+  .projectText h4 {
+    text-align: left; } }

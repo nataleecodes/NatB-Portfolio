@@ -12,6 +12,13 @@
 GLOBAL STYLES
 ================================*/
 
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
 .contentWrapper{
 	max-width: 900px;
 	margin: 0 auto;
@@ -70,7 +77,8 @@ input[type="submit"]{
 }
 button,
 input[type="submit"]{
-	width: 30%;
+	width: 40%;
+	font-size: 2rem;
 }
 a:hover, 
 a:active,
@@ -119,6 +127,7 @@ footer{
 		background: $dark-grey;
 		a:hover{
 			background: $dark-grey;
+			border-radius: 5px;
 		}
 	}
 }
@@ -213,4 +222,12 @@ MEDIA QUERIES
 	article{
 		margin-bottom: 90px;
 	}
+	.projectText{
+    h3{
+        text-align: left;
+    }
+    h4{
+        text-align: left;
+    }
+}
 }

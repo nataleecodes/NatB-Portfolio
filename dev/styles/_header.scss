@@ -30,10 +30,12 @@ header{
     justify-content: space-between;
     &__mainNav{
         li{
-            padding: 2%;
+            // padding: 2%;
             border-radius: 5%;
             background: #363939;
             a{
+                display: inline-block;
+                padding: 17px;
                 color: #cddbe9;
             }
         }
