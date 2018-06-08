@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Natalee Blagden | Web Developer</title>
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600|Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
@@ -17,37 +17,42 @@
 
 <body>
     <!--HEADER STARTS-->
-    <header>
-        <!-- <img class="headshot" src="/Assets/nat-profile-optimized.jpg"> -->
+    <header class="clearfix">
+        <nav class="heroNavBar">
+            <ul class="heroNavBar__mainNav">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <ul id="socialBtns" class="heroNavBar__socialList">
+                <li>
+                    <a href="https://twitter.com/HeyNatalee">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nataleeblagden/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/nataleecodes">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="heroContent contentWrapper">
-            <nav class="heroNavBar">
-                <ul class="heroNavBar__mainNav">
-                    <li>
-                        <a href="#about" class="smoothScroll">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="smoothScroll">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="smoothScroll">Contact</a>
-                    </li>
-                </ul>
-                <ul id="socialBtns" class="heroNavBar__socialList">
-                    <li>
-                        <a href="https://twitter.com/HeyNatalee"><i class="fab fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/nataleeblagden/"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/nataleecodes"><i class="fab fa-github-square"></i></a>
-                    </li>
-                </ul>
-            </nav>
             <div class="headerText">
                 <h1 class="heroContent__headerText__name">Natalee Elizabeth Blagden</h1>
                 <h2 class="heroContent__headerText__title uppercase">Front-End Developer</h2>
-                <a href="#portfolio" id="buttonFix" class="heroContent__headerText__portfolioBtn smoothScroll">Check out My Portfolio</a>
+                <a href="#portfolio" id="buttonFix" class="heroContent__headerText__portfolioBtn">Check out My Portfolio</a>
             </div>
         </div><!--HEROCONTENT WRAPPER ENDS-->
     </header><!--HEADER SECTION ENDS-->
@@ -109,10 +114,10 @@
                             <i class="devicon-gulp-plain"></i>
                             <figcaption>Gulp</figcaption>
                         </figure>
-                        <figure>
+                        <!-- <figure>
                             <i class="devicon-babel-plain"></i>
                             <figcaption>Babel</figcaption>
-                        </figure>
+                        </figure> -->
                         <figure>
                             <i class="devicon-illustrator-plain"></i>
                             <figcaption>Illustrator</figcaption>
@@ -146,13 +151,10 @@
                         <div class="projectText right">
                             <h3>React App with Firebase</h3> 
                             <h4 class="subtitle">- Emily Gilmore Recommends Wine -</h4>
-                            <p>Not sure what to bring to a special event? This app uses React Router and Firebase to provide suggestions in a clean format with entertaining text and smooth transitions.</p>
-                            <button>
-                                <a target="_blank" href="https://egreccoswine.firebaseapp.com/">Try it live</a>
-                            </button>
-                            <button>
-                                <a target="_blank" href="https://github.com/nataleecodes/Solo-React-Project">Github</a>
-                            </button>
+                            <p>Not sure what to bring to a special event? This app uses React Router and Firebase to provide suggestions in a clean format with entertaining text and smooth transitions.</p>        <div class="portfolio-links-wrapper flex-container row">
+                                <a class="portfolio-link" href="https://egreccoswine.firebaseapp.com/" target="_blank">Try it live</a>
+                                <a class="portfolio-link" href="https://github.com/nataleecodes/Solo-React-Project" target="_blank">GitHub</a>
+                            </div>
                         </div>
                     </article>
                     <article class="portfolio__portfolioItem flex-container row">
@@ -162,12 +164,10 @@
                             <h4 class="subtitle">- Let's Get Cooking Quiz -</h4>
                             <p>Find meal prep recipes faster with this cheerful little quiz. I built this using object-oriented JavaScript (organized
                                 in its own namespace). Data is brought in from a custom JSON database in Firebase, and CSS transitions add polish.</p>
-                            <button>
-                                <a target="_blank" href="http://nataleecodes.com/project3/">Try it live</a>
-                            </button>
-                            <button>
-                                <a target="_blank" href="https://github.com/nataleecodes/letsgetcooking">Github</a>
-                            </button>
+                            <div class="portfolio-links-wrapper flex-container row">
+                                <a class="portfolio-link" href="http://nataleecodes.com/project3/" target="_blank">Try it live</a>
+                                <a class="portfolio-link" href="https://github.com/nataleecodes/letsgetcooking" target="_blank">GitHub</a>
+                            </div>
                         </div>
                     </article>
                     <article class="portfolio__portfolioItem flex-container row">
@@ -176,12 +176,10 @@
                             <h3>React App with Firebase & an API</h3>
                             <h4 class="subtitle">- I Heart Concerts" Event Finder -</h3>
                             <p>An app that uses the BandsInTown API and Firebase to allow users to create a journal of their favourite bands and find tickets to upcoming shows. User's info is saved to their private file using Google Auth and Firebase rules.</p>
-                            <button>
-                                <a target="_blank" href="https://iheartconcerts-80ab6.firebaseapp.com/">Try it live</a>
-                            </button>
-                            <button>
-                                <a target="_blank" href="https://github.com/nataleecodes/I-Heart-Concerts-React-Project">Github</a>
-                            </button>
+                            <div class="portfolio-links-wrapper flex-container row">
+                                <a class="portfolio-link" href="https://iheartconcerts-80ab6.firebaseapp.com/" target="_blank">Try it live</a>
+                                <a class="portfolio-link" href="https://github.com/nataleecodes/I-Heart-Concerts-React-Project" target="_blank">GitHub</a>
+                            </div>
                         </div>
                     </article>
                     <article class="portfolio__portfolioItem flex-container row">
@@ -189,24 +187,22 @@
                         <div class="projectText left">
                             <h3>jQuery App Using an API</h3> 
                             <h4 class="subtitle">- Take Off Road Trip Planner -</h4>
-                            <p>This project utilizes two Google APIs and modular programming practices. The goal: help people plan road trips to summer hot spots around Ontario.</p>
-                            <button>
-                                <a target="_blank" href="http://nataleecodes.com/takeoff2/">Try it live</a>
-                            </button>
-                            <button>
-                                <a target="_blank" href="https://github.com/nataleecodes/TakeOff-JQuery-Project">Github</a>
-                            </button>
+                            <p>This project utilizes two Google APIs and object-oriented programming practices. The goal: help people plan road trips to summer hot spots around Ontario.</p>
+                            <div class="portfolio-links-wrapper flex-container row">
+                                <a class="portfolio-link" href="http://nataleecodes.com/takeoff2/" target="_blank">Try it live</a>
+                                <a class="portfolio-link" href="https://github.com/nataleecodes/TakeOff-JQuery-Project" target="_blank">GitHub</a>
+                            </div>
                         </div>
                     </article>
                 </div>
             </section><!--PORTFOLIO SECTION ENDS-->
 
             <!--CONTACT SECTION STARTS-->
-            <section class="primary-bkg" id="contact">  
+            <section id="contact" class="primary-bkg">  
                 <form action="http://www.focuspocus.io/magic/natalee@nataleecodes.com" method="POST" class="contact flex-container column contentWrapper">
                     <h2 class="contact__title">Contact</h2>
                     <p class="contact__blurb">Drop me a line!</p> 
-                    <p class="contact__blurb email-me">Email <a id="email-font" class="email-me" href="mailto:natalee.blagden@gmail.com">Natalee.blagden(at)gmail.com</a> or fill out the form below.</p>
+                    <p class="contact__blurb email-me">Email <a id="email-font" class="email-me" href="mailto:natalee.blagden@gmail.com"><strong>Natalee.Blagden(at)gmail.com</strong></a> or fill out the form below.</p>
                     
                     <label class="visually-hidden"for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Your Name"></input>
@@ -232,7 +228,6 @@
 
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script type="text/javascript" src="public/scripts/smoothscroll.js"></script>
     <script src="public/scripts/main.js"></script>
 </body>
 

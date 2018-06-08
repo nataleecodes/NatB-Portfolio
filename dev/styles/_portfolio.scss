@@ -1,14 +1,11 @@
 
-// .subtitle{
-// 	// color: $dark-grey;
-// 	font-weight: 300;
-// 	font-size: 3rem;
-// 	line-height: 4.2rem;
-// 	margin: 0;
-// 	color:$dark-grey;
-// }
 article{
     img{
         object-fit: contain;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    p{
+        font-size: 1.8rem;
     }
 }

@@ -5,8 +5,12 @@
         object-fit: contain;
         object-position: top;
         padding-top: 0.5%;
+        padding-left: 2%;
     }
     &__bio{
         width: 75%;
+    }
+    p{
+        font-size: 1.8rem;
     }
 }

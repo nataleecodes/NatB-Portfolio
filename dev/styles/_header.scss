@@ -8,11 +8,66 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+// .heroContent{
+// 	display: flex;
+// 	flex-flow: column;
+// 	flex-wrap: no-wrap;
+// }
+.heroNavBar__mainNav{
+	float: none;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+		li{
+			width: 100%;
+			a{
+				width: 100%;
+				display: inline-block;
+				padding: 17px;
+				color: #cddbe9;
+			}
+		}
+}
+.heroNavBar{
+    overflow: hidden;
+    width: 100%;
+    // justify-content: space-between;
+    &__mainNav,
+    #socialBtns{
+		li{
+			a{
+			text-align: center;
+			}
+		}
+	}
+}	
+.heroNavBar__mainNav,
+.heroNavBar__socialList{
+	width: 100%;
+}
+#socialBtns{
+	// display: none;
+	li{
+		a:hover{
+			background: none;
+			color: $dark-grey;
+		}
+	}
+}
+.heroNavBar__mainNav{
+	li:hover{
+		background: $dark-grey;
+		a:hover{
+			background: $dark-grey;
+		}
+	}
+}
 .heroContent{
-    justify-content: space-between;
+    // justify-content: space-between;
     height: 100vh;
     &__headerText__title{
-    color:$black;
+    color: $black;
     font-size: 2rem;
     text-transform: uppercase;
     }
@@ -26,55 +81,31 @@ header{
     }
 }
 .heroNavBar{
-    width: 100%;
     justify-content: space-between;
+    background:linear-gradient(rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.35));
     &__mainNav{
         li{
-            // padding: 2%;
-            border-radius: 5%;
-            background: #363939;
             a{
                 display: inline-block;
                 padding: 17px;
-                color: #cddbe9;
+                color: $black;
             }
         }
     }
     
-    &__mainNav,
-    #socialBtns{
+    &__mainNav{
         padding-left: 0;
-        margin-top: 5%;
         li{
             list-style: none;
             display: inline-block;
-            color:  #363939;;
-            // padding-left: 0;
         }
     }
-    .heroNavBar__socialList{
+    &__socialList{
         li{
             a{
-                color:  #363939;
+                color: $black;
+                opacity: 0.85;
             }
         }
     }
 }
- 
-// #buttonFix{
-
-// }
-// .heroContent__mainNav__List{
-//     padding: 0;
-//     text-align: center;
-//     li{
-//         list-style: none;
-//         display: inline-block;
-//         padding: 2%;
-//         // width: 25%;
-//         a{
-//             color: $black;
-//             font-size: 2rem;
-//         }
-//     }
-// }

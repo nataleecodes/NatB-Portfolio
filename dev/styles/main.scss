@@ -8,6 +8,9 @@
 @import 'portfolio';
 
 
+
+
+
 /*================================
 GLOBAL STYLES
 ================================*/
@@ -22,30 +25,9 @@ GLOBAL STYLES
 .contentWrapper{
 	max-width: 900px;
 	margin: 0 auto;
-} 
+}
 .flex-container{
 	display: flex;
-}
-.heroContent{
-	display: flex;
-	flex-flow: column;
-	flex-wrap: no-wrap;
-}
-// .heroNavBar{
-// 	display: flex;
-// 	flex-flow: row;
-// 	flex-wrap: wrap;
-// }
-.heroNavBar__mainNav,
-.heroNavBar__socialList{
-	width: 50%;
-}
-.heroNavBar__mainNav{
-	float: left;
-}
-.heroNavBar__socialList{
-	float: right;
-	text-align: end;
 }
 .row{
 	flex-flow: row wrap;
@@ -63,7 +45,13 @@ GLOBAL STYLES
 .skills,
 .portfolio,
 .contact{
-	padding: 5% 0 8% 0;
+	padding: 5% 2% 8% 2%;
+}
+.about{
+		max-height: 470px;
+	}
+#socialBtns{
+	display: none;
 }
 button,
 input[type="submit"]{
@@ -77,13 +65,15 @@ input[type="submit"]{
 }
 button,
 input[type="submit"]{
-	width: 40%;
+	width: 100%;
 	font-size: 2rem;
 }
 a:hover, 
 a:active,
 button:hover,
 button:active,
+.portfolio-link:hover,
+.portfolio-link:active,
 input[type="submit"]:hover,
 input[type="submit"]:active {
    background: $yellow;
@@ -97,76 +87,136 @@ footer{
 		padding: 10px 0 30px;
 	}
 }
-
+.portfolio-link{
+	font-size: 1.5rem;
+	background: silver;
+	padding: 2% 4%;
+	a:hover, a:active{
+		background: $yellow;
+	}
+}
 .contact__blurb{
 	margin: 10px 0;
 }
-
-.email-me, label{
-	a{
-	font-size: 2rem;
-	line-height: 2.2rem;
+.email-me a, label a {
+	font-size: 1.5rem;
 	text-transform: none;
-	}
 }
-
 .input[type="text"]{
 	line-height: 2.5rem;
 }
+.portfolio-links-wrapper{
+	margin-left: 10px;
+}
+.portfolio-link{
+	width: 46%;
+	text-align: center;
+	margin: 0 1%;
+}
 
-#socialBtns{
-	li{
-		a:hover{
-			background: none;
-			color: $dark-grey;
-		}
-	}
-}
-.heroNavBar__mainNav{
-	li:hover{
-		background: $dark-grey;
-		a:hover{
-			background: $dark-grey;
-			border-radius: 5px;
-		}
-	}
-}
-// .footerNav__footerItem{
-// 	width: 15%;
-// 	text-align: center;
-// 	list-style: none;
-// 	display: inline-block;
-// 	background: red;
-// 	a{
-// 		color: white;
-// 	}
-// }
 /*================================
 MEDIA QUERIES 
 ================================*/
 
-/*Tablet view*/
-@media (min-width: 750px){
+/*--------------------------------
+TABLET VIEW
+--------------------------------*/
+@media (min-width: 765px){
+	.portfolio-links-wrapper{
+	margin-left: 0px;
+	}
 	.portfolio{
 		article{
 			margin: 6% 0 8% 0;
 			img, .projectText{
 				width: 48%;
+				margin: 7% 0 0 2%;
 			}
-			.projectText.left{
-				margin-left: 2%;
+			// .projectText.left{
+			// 	margin-left: 2%;
+			// }
+			// .projectText.right{
+			// 	margin-right: 2%;
+			// 	flex-direction: row-reverse;
+			// }
+		}
+	}
+	.portfolio-link{
+		width: 35%
+	}
+	button,
+		input[type="submit"]{
+		width: 40%;
+		font-size: 2rem;
+	}
+	#socialBtns{
+		display:inline-block;
+	}
+	.heroNavBar__mainNav,
+	.heroNavBar__socialList{
+		width: 45%;
+			li{
+				border-radius: 5%;
 			}
-			.projectText.right{
-				margin-right: 2%;
-				flex-direction: row-reverse;
+	}
+	.heroNavBar__mainNav{
+		float: left;
+	}
+	.heroNavBar__socialList{
+		float: right;
+		text-align: end;
+	}
+	#socialBtns{
+		float: right;
+		list-style: none;
+		display: inline-block;
+		margin-right: 5%;
+		li{
+			list-style: none;
+			display: inline-block;
+			i{
+				font-size: 2.5rem;
+				padding-top: 44%;
+				padding-right: 15px;
 			}
 		}
-	}	
+	}
+	.heroNavBar__mainNav li{
+		width: 30%;
+	}
+	.email-me, label{
+	a{
+	font-size: 2rem;
+	line-height: 2.2rem;
+	}
+}
+	// .portfolio-links-wrapper{
+	//     justify-content: flex-start;
+	// }
 }
 
 
-/*Desktop view*/
+/*--------------------------------
+DESKTOP VIEW
+--------------------------------*/
 @media (min-width: 900px) {
+	.heroNavBar__mainNav{
+		width: 50%;
+		display: block;
+		li{
+			a{
+				text-align: center;
+			}
+		}
+	}
+	.heroNavBar__socialList{
+		li{
+			display: block;
+			a{
+				display:block;
+			}
+		}
+	}
 	a{
 		font-size: 2rem;
 	}
@@ -190,7 +240,6 @@ MEDIA QUERIES
 		line-height: 3.5rem;
 	}
 	.about{
-		max-height: 600px;
 		padding-top: 0;
 		padding-bottom: 30px;
 	}
@@ -223,11 +272,12 @@ MEDIA QUERIES
 		margin-bottom: 90px;
 	}
 	.projectText{
-    h3{
-        text-align: left;
-    }
-    h4{
-        text-align: left;
-    }
+		h3{
+			text-align: left;
+		}
+		h4{
+			text-align: left;
+		}
+	}
 }
-}
+
