@@ -277,7 +277,8 @@ header {
   .about__bio {
     width: 75%; }
   .about p {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin-top: 0px; }
 
 form label {
   margin-top: 2%; }
@@ -404,7 +405,7 @@ GLOBAL STYLES
   padding: 5% 2% 8% 2%; }
 
 .about {
-  max-height: 470px; }
+  max-height: 590px; }
 
 #socialBtns {
   display: none; }
