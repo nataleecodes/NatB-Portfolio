@@ -8,11 +8,23 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-// .heroContent{
-// 	display: flex;
-// 	flex-flow: column;
-// 	flex-wrap: no-wrap;
-// }
+label[for="toggle"] {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    color: $black;
+    z-index: 6;
+    font-size: 3rem;
+}
+.nav-responsive{
+    display: none;
+}
+#toggle{
+    display: none;
+}
+svg.hamburger{
+    display: none;
+}
 .heroNavBar__mainNav{
 	float: none;
 	width: 100%;
@@ -47,7 +59,6 @@ header{
 	width: 100%;
 }
 #socialBtns{
-	// display: none;
 	li{
 		a:hover{
 			background: none;

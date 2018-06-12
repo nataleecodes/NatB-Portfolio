@@ -16,10 +16,31 @@
 </head>
 
 <body>
+    <!-- <label for="toggle">
+        <i class="fas fa-bars hamburger"></i>
+    </label> -->
     <!--HEADER STARTS-->
-    <header class="clearfix">
-        <nav class="heroNavBar">
-            <ul class="heroNavBar__mainNav">
+    <header>
+        <i class="fas fa-bars hamburger" id="menuBtn"></i>
+        <!-- <input type="checkbox" id="toggle" name="toggle"> -->
+        <nav class="menu">
+            <ul>
+                <li class="menu__link">
+                    <a href="#" class="menuCloseBtn">x</a>
+                </li>
+                <li class="menu__link">
+                    <a href="#about">About</a>
+                </li>
+                <li class="menu__link">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="menu__link">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <nav class="heroNavBar"> -->
+            <!-- <ul class="heroNavBar__mainNav">
                 <li>
                     <a href="#about">About</a>
                 </li>
@@ -46,7 +67,7 @@
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="heroContent contentWrapper">
             <div class="headerText">
@@ -82,10 +103,10 @@
                             <i class="devicon-javascript-plain"></i>
                             <figcaption>JavaScript</figcaption>
                         </figure>
-                        <figure>
+                        <!-- <figure>
                             <img class="nounIcon" src="Assets/jquery.svg" alt="jQuery logo">
                             <figcaption>jQuery</figcaption>
-                        </figure>
+                        </figure> -->
                         <figure>
                             <i class="devicon-react-original"></i>
                             <figcaption>React</figcaption>

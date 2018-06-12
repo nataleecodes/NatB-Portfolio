@@ -24,3 +24,17 @@ $(function () {
         } // End if
     });
 });
+
+let menuBtn = document.querySelector('#menuBtn');
+let menu = document.querySelector('.menu');
+let menuLink = document.querySelectorAll('.menu__link');
+
+menuBtn.addEventListener('click', function () {
+    menu.classList.toggle('show');
+});
+
+menuLink.forEach(function (item) {
+    item.addEventListener('click', function () {
+        menu.classList.toggle('show');
+    });
+});
