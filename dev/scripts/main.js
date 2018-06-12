@@ -25,16 +25,60 @@ $(function () {
     });
 });
 
-let menuBtn = document.querySelector('#menuBtn');
-let menu = document.querySelector('.menu');
-let menuLink = document.querySelectorAll('.menu__link');
+// let menuBtn = document.querySelector('#menuBtn');
+// let menu = document.querySelector('.menu');
+// let menuLink = document.querySelectorAll('.menu__link');
 
-menuBtn.addEventListener('click', function () {
-    menu.classList.toggle('show');
-});
+// menuBtn.addEventListener('click', function () {
+//     menu.classList.toggle('show');
+// });
 
-menuLink.forEach(function (item) {
-    item.addEventListener('click', function () {
-        menu.classList.toggle('show');
-    });
-});
+// menuLink.forEach(function (item) {
+//     item.addEventListener('click', function () {
+//         menu.classList.toggle('show');
+//     });
+// });
+
+let showMenu = false;
+$('.hamburger').on('click', function(e){
+    console.log("hamburger has been clicked!");
+    if(showMenu){
+        $('.fas').removeClass('fa-times').addClass('fa-bars');
+        $('.menu').fadeOut();
+        showMenu = false;
+        } else {
+            $('.fas').removeClass('fa-bars').addClass('fa-times');
+            $('.menu').fadeIn();
+            showMenu = true;    
+        }
+    }
+);
+
+// On click, toggle show
+
+// $(function () {
+//     let active = false;
+//     $('.hamburger').click(function (e) {
+//         if (active) {
+//             $('.ya').addClass('fa-bars').removeClass('fa-times');
+//             $('.header__nav--responsive').fadeOut();
+//             active = false;
+//         } else {
+//             $('.ya').addClass('fa-times').removeClass('fa-bars');
+//             $('.header__nav--responsive').fadeIn();
+//             active = true;
+//         }
+//     });
+//     $('.ul__responsive>li').on('click', () => {
+//         $('.ya').addClass('fa-bars').removeClass('fa-times');
+//         $('.header__nav--responsive').fadeOut();
+//         active = false;
+//     })
+// });
+
+// <label for="toggle" class="hamburger">
+//     <i class="fas fa-bars ya"></i>
+// </label>
+// .header__nav--responsive {
+//     display: none;
+// }
