@@ -54,31 +54,9 @@ $('.hamburger').on('click', function(e){
     }
 );
 
-// On click, toggle show
+$('.menu__link').on('click', () => {
+    $('.fas').addClass('fa-bars').removeClass('fa-times');
+    $('.menu').fadeOut();
+    active = false;
+})
 
-// $(function () {
-//     let active = false;
-//     $('.hamburger').click(function (e) {
-//         if (active) {
-//             $('.ya').addClass('fa-bars').removeClass('fa-times');
-//             $('.header__nav--responsive').fadeOut();
-//             active = false;
-//         } else {
-//             $('.ya').addClass('fa-times').removeClass('fa-bars');
-//             $('.header__nav--responsive').fadeIn();
-//             active = true;
-//         }
-//     });
-//     $('.ul__responsive>li').on('click', () => {
-//         $('.ya').addClass('fa-bars').removeClass('fa-times');
-//         $('.header__nav--responsive').fadeOut();
-//         active = false;
-//     })
-// });
-
-// <label for="toggle" class="hamburger">
-//     <i class="fas fa-bars ya"></i>
-// </label>
-// .header__nav--responsive {
-//     display: none;
-// }
