@@ -1,9 +1,10 @@
 console.log("js file loads");
 
+//Smooth Scroll JS
 $(function () {
     // Add smooth scrolling to all links
-    $("a").on('click', function (event) {
 
+    $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -25,23 +26,11 @@ $(function () {
     });
 });
 
-// let menuBtn = document.querySelector('#menuBtn');
-// let menu = document.querySelector('.menu');
-// let menuLink = document.querySelectorAll('.menu__link');
 
-// menuBtn.addEventListener('click', function () {
-//     menu.classList.toggle('show');
-// });
-
-// menuLink.forEach(function (item) {
-//     item.addEventListener('click', function () {
-//         menu.classList.toggle('show');
-//     });
-// });
-
+//Hamburger Menu Controls
 let showMenu = false;
+
 $('.hamburger').on('click', function(e){
-    console.log("hamburger has been clicked!");
     if(showMenu){
         $('.fas').removeClass('fa-times').addClass('fa-bars');
         $('.menu').fadeOut();
@@ -53,7 +42,6 @@ $('.hamburger').on('click', function(e){
         }
     }
 );
-
 $('.menu__link').on('click', () => {
     $('.fas').addClass('fa-bars').removeClass('fa-times');
     $('.menu').fadeOut();
