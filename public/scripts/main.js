@@ -2,10 +2,11 @@
 
 console.log("js file loads");
 
+//Smooth Scroll JS
 $(function () {
     // Add smooth scrolling to all links
-    $("a").on('click', function (event) {
 
+    $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -27,9 +28,10 @@ $(function () {
     });
 });
 
+//Hamburger Menu Controls
 var showMenu = false;
+
 $('.hamburger').on('click', function (e) {
-    console.log("hamburger has been clicked!");
     if (showMenu) {
         $('.fas').removeClass('fa-times').addClass('fa-bars');
         $('.menu').fadeOut();
@@ -40,7 +42,6 @@ $('.hamburger').on('click', function (e) {
         showMenu = true;
     }
 });
-
 $('.menu__link').on('click', function () {
     $('.fas').addClass('fa-bars').removeClass('fa-times');
     $('.menu').fadeOut();

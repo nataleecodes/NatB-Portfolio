@@ -17,8 +17,9 @@ form{
     }
     input[type="text"],
     textarea{
-        border: 0.5px solid silver;
-        line-height: 5rem;
+        border: none;
+        line-height: 2.5rem;
+        padding: 1.5%;
     }
     input[type="submit"]{
         margin-top: 5%;

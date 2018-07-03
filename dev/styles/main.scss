@@ -53,6 +53,11 @@ GLOBAL STYLES
 #socialBtns{
 	display: none;
 }
+
+.heroContent__headerText__portfolioBtn, 
+.portfolio-link{
+	border-radius: 2px;
+}
 button,
 input[type="submit"]{
 	font-family: "Raleway";
@@ -62,9 +67,7 @@ input[type="submit"]{
 	margin: 0 auto;
 	border: 1px solid transparent;
 	margin-bottom: 5%;
-}
-button,
-input[type="submit"]{
+	border-radius: 2px;
 	width: 100%;
 	font-size: 2rem;
 }
