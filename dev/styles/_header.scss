@@ -77,6 +77,9 @@ svg.hamburger{
 .heroContent{
     // justify-content: space-between;
     height: 100vh;
+    &__headerText__name{
+        font-weight: 600;
+    }
     &__headerText__title{
     color: $black;
     font-size: 2rem;

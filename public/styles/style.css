@@ -249,6 +249,8 @@ svg.hamburger {
 
 .heroContent {
   height: 100vh; }
+  .heroContent__headerText__name {
+    font-weight: 600; }
   .heroContent__headerText__title {
     color: #1b1c1c;
     font-size: 2rem;
