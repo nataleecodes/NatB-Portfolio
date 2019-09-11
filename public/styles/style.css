@@ -451,10 +451,12 @@ a:active,
 button:hover,
 button:active,
 .portfolio-link:hover,
-.portfolio-link:active,
-input[type="submit"]:hover,
-input[type="submit"]:active {
+.portfolio-link:active{
   background: #BE3E46; }
+
+input[type="submit"]:hover,
+input[type="submit"]:active{
+  background: #D4C8CD; }
 
 footer {
   background: #1b1c1c; }
