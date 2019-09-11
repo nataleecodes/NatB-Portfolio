@@ -137,7 +137,7 @@ body, a {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: #1b1c1c; }
+  color: ##101E1B; }
 
 h2, h3, p, ul {
   margin: 0; }
@@ -175,7 +175,7 @@ h4 {
 
 a {
   text-decoration: none;
-  color: #1b1c1c;
+  color: ##101E1B;
   text-transform: uppercase; }
 
 p {
@@ -193,7 +193,7 @@ label[for="toggle"] {
   position: fixed;
   top: 25px;
   left: 25px;
-  color: #1b1c1c;
+  color: ##101E1B;
   z-index: 6;
   font-size: 3rem; }
 
@@ -240,17 +240,17 @@ svg.hamburger {
 
 #socialBtns li a:hover {
   background: none;
-  color: #575c5d; }
+  color: #BE3E46; }
 
 .heroNavBar__mainNav li:hover {
-  background: #575c5d; }
+  background: #BE3E46; }
   .heroNavBar__mainNav li:hover a:hover {
-    background: #575c5d; }
+    background: #BE3E46; }
 
 .heroContent {
   height: 100vh; }
   .heroContent__headerText__title {
-    color: #1b1c1c;
+    color: ##101E1B;
     font-size: 2rem;
     text-transform: uppercase; }
   .heroContent__headerText__portfolioBtn {
@@ -270,14 +270,14 @@ svg.hamburger {
   .heroNavBar__mainNav li a {
     display: inline-block;
     padding: 17px;
-    color: #1b1c1c; }
+    color: ##101E1B; }
   .heroNavBar__mainNav {
     padding-left: 0; }
     .heroNavBar__mainNav li {
       list-style: none;
       display: inline-block; }
   .heroNavBar__socialList li a {
-    color: #1b1c1c;
+    color: ##101E1B;
     opacity: 0.85; }
 
 .about {
@@ -457,7 +457,7 @@ input[type="submit"]:active {
   background: #FDE74C; }
 
 footer {
-  background: #1b1c1c; }
+  background: ##101E1B; }
   footer p {
     text-align: center;
     color: #fefefe;
