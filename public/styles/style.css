@@ -137,7 +137,7 @@ body, a {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: ##101E1B; }
+  color: #1b1c1c; }
 
 h2, h3, p, ul {
   margin: 0; }
@@ -175,7 +175,7 @@ h4 {
 
 a {
   text-decoration: none;
-  color: ##101E1B;
+  color: #1b1c1c;
   text-transform: uppercase; }
 
 p {
@@ -193,7 +193,7 @@ label[for="toggle"] {
   position: fixed;
   top: 25px;
   left: 25px;
-  color: ##101E1B;
+  color: #1b1c1c;
   z-index: 6;
   font-size: 3rem; }
 
@@ -250,7 +250,7 @@ svg.hamburger {
 .heroContent {
   height: 100vh; }
   .heroContent__headerText__title {
-    color: ##101E1B;
+    color: #1b1c1c;
     font-size: 2rem;
     text-transform: uppercase; }
   .heroContent__headerText__portfolioBtn {
@@ -270,14 +270,14 @@ svg.hamburger {
   .heroNavBar__mainNav li a {
     display: inline-block;
     padding: 17px;
-    color: ##101E1B; }
+    color: #1b1c1c; }
   .heroNavBar__mainNav {
     padding-left: 0; }
     .heroNavBar__mainNav li {
       list-style: none;
       display: inline-block; }
   .heroNavBar__socialList li a {
-    color: ##101E1B;
+    color: #1b1c1c;
     opacity: 0.85; }
 
 .about {
@@ -338,7 +338,7 @@ form textarea {
   margin-top: 10px; }
   form input[type="text"]:hover,
   form textarea:hover {
-    background: #FDE74C; }
+    background: #BE3E46; }
 
 form .email-me a {
   color: #177E89; }
@@ -454,10 +454,10 @@ button:active,
 .portfolio-link:active,
 input[type="submit"]:hover,
 input[type="submit"]:active {
-  background: #FDE74C; }
+  background: #BE3E46; }
 
 footer {
-  background: ##101E1B; }
+  background: #1b1c1c; }
   footer p {
     text-align: center;
     color: #fefefe;
@@ -469,7 +469,7 @@ footer {
   background: silver;
   padding: 2% 4%; }
   .portfolio-link a:hover, .portfolio-link a:active {
-    background: #FDE74C; }
+    background: #BE3E46; }
 
 .contact__blurb {
   margin: 10px 0; }
