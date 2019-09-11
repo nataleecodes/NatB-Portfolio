@@ -184,8 +184,8 @@ p {
   margin-top: 2%; }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.35))), url("Assets/yu-kato-min.jpg");
-  background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35)), url("Assets/yu-kato-min.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.35))), url("https://images.unsplash.com/photo-1539623370578-f64acff0d7ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80");
+  background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35)), url("https://images.unsplash.com/photo-1539623370578-f64acff0d7ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80");
   background-repeat: no-repeat;
   background-size: cover; }
 
